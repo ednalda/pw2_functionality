@@ -10,7 +10,7 @@
 </head>
  <body>
   <div id="pageProjects">
-  	<div="headerProjects">
+  	<div id="headerProjects">
 		<ul id="ulHeaderProjects">
 			<li ><img src="images/icon.jpg" id="icon"/><li>
 			<li><p>Wellcome! Student</p></li>
@@ -22,6 +22,8 @@
 	   <h2>Welcome to the Projects page. You can review your project, delete or add more.</h2>
 	  <div class="welcome">
 	   	<p><a href="#new" class="modalClick">New Project</a></p>
+            <div class="projects" id="sortable"></div>
+            <div class="selector"></div>
        <div id="new">
        	<span class="close">x</span>
        	<h3 class="headerProjectnew">Add Project</h3>
@@ -29,7 +31,7 @@
        	<form id="formAdd">
        		<p>Project Name:<br /><input type="text" required name="username" size="30" maxlength="60"  id="projectName"/></p>
        		<p>Project Description:<br /> <input type="text" required name="username" size="30" maxlength="60"  id="projectDescription"/></p>
-       		<p>Due Date:  <br /><input type="text" required name="username" size="30" maxlength="60" id="projectDueData"/></p>
+       		<p>Due Date:  <br /><input type="text" required name="username" size="30" maxlength="60" id="projectDueData" class="mydatepicker"/></p>
        		<p>Select Status:<br />
        			<input type="radio" name="status" id="urgent"><img src="images/urgent.jpeg" width="50" height="50"/>
        			<input type="radio" name="status" id="normal"><img src="images/normal.jpeg" width="50" height="50"/>
@@ -42,7 +44,12 @@
        	</div><!--End of new-->
        </div><!--End of welcome-->
 	   </div><!--End of content-->
+      </div><!--End of pageProjects-->
 	   <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+          <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+          <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+          <script type="text/javascript" src="path_to/jquery.js"></script>
+          <script type="text/javascript" src="path_to/jquery.simplePagination.js"></script>
 	    <script type="text/javascript" src="js/main.js"></script>
 	</body>
 	</html>

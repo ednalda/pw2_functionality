@@ -297,6 +297,19 @@ color: #fff;
 	padding: 0px 10px;
 
 }
+.tooltip{
+display:none;
+position:absolute;
+border:1px solid #333;
+background-color: #66cc33;
+border-radius: 5px;
+padding:10px;
+color:#fff;
+font-size:12px arial;
+}
+.mydatepicker{
+	
+}
 .close:hover{
 	background-color:#66cc33;
 	color:#fff;
@@ -322,3 +335,6 @@ input [type=radio]:checked + img {
 	color:#000033;
 
 }
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+  #sortable li span { position: absolute; margin-left: -1.3em;
